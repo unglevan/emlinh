@@ -183,6 +183,7 @@ Stack trace:
 REQUEST_URI=/emlinh/garmentviet/index.php/clickGo
 HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/location
 ---
+<<<<<<< HEAD
 2013/06/13 11:49:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\xampp\htdocs\emlinh\yii\framework\db\CDbConnection.php:381
 Stack trace:
 #0 C:\xampp\htdocs\emlinh\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
@@ -230,4 +231,27 @@ Stack trace:
 #18 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
 #19 {main}
 REQUEST_URI=/emlinh/garmentviet/index.php/location
+=======
+2013/06/13 13:17:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "product".' in /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(270): CController->missingAction('product')
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(282): CController->run('product')
+#2 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('location/produc...')
+#3 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/location/product/view
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/
+---
+2013/06/13 13:17:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "product".' in /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(270): CController->missingAction('product')
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(282): CController->run('product')
+#2 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('location/produc...')
+#3 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/location/product/view
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/
+>>>>>>> update home page
 ---
