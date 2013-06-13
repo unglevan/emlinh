@@ -21,3 +21,165 @@ Stack trace:
 REQUEST_URI=/emlinh/garmentviet/index.php?r=site/contact
 HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php?r=site/page&view=about
 ---
+2013/06/13 11:45:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in /Applications/MAMP/htdocs/emlinh/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/emlinh/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Applications/MAMP/htdocs/emlinh/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/htdocs/emlinh/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/htdocs/emlinh/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php?r=gii/model
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php?r=gii/default/index
+---
+2013/06/13 12:03:04 [error] [php] Object of class Location could not be converted to string (/Applications/MAMP/htdocs/emlinh/yii/framework/web/helpers/CHtml.php:2071)
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CBaseController.php(126): require()
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CBaseController.php(95): LocationController->renderInternal()
+#2 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(869): LocationController->renderFile()
+#3 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(782): LocationController->renderPartial()
+#4 /Applications/MAMP/htdocs/emlinh/garmentviet/protected/controllers/LocationController.php(10): LocationController->render()
+#5 /Applications/MAMP/htdocs/emlinh/yii/framework/web/actions/CInlineAction.php(49): LocationController->actionIndex()
+#6 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(286): LocationController->runAction()
+#8 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(265): LocationController->runActionWithFilters()
+#9 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(282): LocationController->run()
+#10 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php?r=location
+in /Applications/MAMP/htdocs/emlinh/garmentviet/protected/views/location/index.php (6)
+in /Applications/MAMP/htdocs/emlinh/garmentviet/protected/controllers/LocationController.php (10)
+in /Applications/MAMP/htdocs/emlinh/garmentviet/index.php (13)
+2013/06/13 12:28:34 [error] [php] Non-static method CActiveForm::dropDownList() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/emlinh/garmentviet/protected/views/location/index.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(869): LocationController->renderFile()
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(782): LocationController->renderPartial()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/protected/controllers/LocationController.php(16): LocationController->render()
+#3 unknown(0): LocationController->actionIndex()
+#4 /Applications/MAMP/htdocs/emlinh/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/htdocs/emlinh/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(286): LocationController->runAction()
+#8 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(265): LocationController->runActionWithFilters()
+#9 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(282): LocationController->run()
+#10 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/location
+in /Applications/MAMP/htdocs/emlinh/garmentviet/protected/views/location/index.php (10)
+in /Applications/MAMP/htdocs/emlinh/garmentviet/protected/controllers/LocationController.php (16)
+in /Applications/MAMP/htdocs/emlinh/garmentviet/index.php (13)
+2013/06/13 12:28:55 [error] [php] get_class() expects parameter 1 to be object, string given (/Applications/MAMP/htdocs/emlinh/yii/framework/web/helpers/CHtml.php:2220)
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/helpers/CHtml.php(1564): resolveNameID()
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/web/widgets/CActiveForm.php(763): activeDropDownList()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/protected/views/location/index.php(10): CActiveForm->dropDownList()
+#3 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CBaseController.php(126): require()
+#4 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CBaseController.php(95): LocationController->renderInternal()
+#5 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(869): LocationController->renderFile()
+#6 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(782): LocationController->renderPartial()
+#7 /Applications/MAMP/htdocs/emlinh/garmentviet/protected/controllers/LocationController.php(16): LocationController->render()
+#8 unknown(0): LocationController->actionIndex()
+#9 /Applications/MAMP/htdocs/emlinh/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#10 /Applications/MAMP/htdocs/emlinh/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(286): LocationController->runAction()
+#13 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(265): LocationController->runActionWithFilters()
+#14 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(282): LocationController->run()
+#15 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/location
+in /Applications/MAMP/htdocs/emlinh/garmentviet/protected/views/location/index.php (10)
+in /Applications/MAMP/htdocs/emlinh/garmentviet/protected/controllers/LocationController.php (16)
+in /Applications/MAMP/htdocs/emlinh/garmentviet/index.php (13)
+2013/06/13 12:29:21 [error] [php] get_class() expects parameter 1 to be object, string given (/Applications/MAMP/htdocs/emlinh/yii/framework/web/helpers/CHtml.php:2220)
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/helpers/CHtml.php(1564): resolveNameID()
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/web/widgets/CActiveForm.php(763): activeDropDownList()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/protected/views/location/index.php(11): CActiveForm->dropDownList()
+#3 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CBaseController.php(126): require()
+#4 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CBaseController.php(95): LocationController->renderInternal()
+#5 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(869): LocationController->renderFile()
+#6 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(782): LocationController->renderPartial()
+#7 /Applications/MAMP/htdocs/emlinh/garmentviet/protected/controllers/LocationController.php(16): LocationController->render()
+#8 unknown(0): LocationController->actionIndex()
+#9 /Applications/MAMP/htdocs/emlinh/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#10 /Applications/MAMP/htdocs/emlinh/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(286): LocationController->runAction()
+#13 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CController.php(265): LocationController->runActionWithFilters()
+#14 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(282): LocationController->run()
+#15 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/location
+in /Applications/MAMP/htdocs/emlinh/garmentviet/protected/views/location/index.php (11)
+in /Applications/MAMP/htdocs/emlinh/garmentviet/protected/controllers/LocationController.php (16)
+in /Applications/MAMP/htdocs/emlinh/garmentviet/index.php (13)
+2013/06/13 12:37:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clickGo".' in /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('clickGo')
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/clickGo
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/location
+---
+2013/06/13 12:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clickGo".' in /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('clickGo')
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/clickGo
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/location
+---
+2013/06/13 12:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clickGo".' in /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('clickGo')
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/clickGo
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/location
+---
+2013/06/13 12:38:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clickGo".' in /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('clickGo')
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/clickGo
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/location
+---
+2013/06/13 12:38:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clickGo".' in /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('clickGo')
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/clickGo
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/location
+---
+2013/06/13 12:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clickGo".' in /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/emlinh/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('clickGo')
+#1 /Applications/MAMP/htdocs/emlinh/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/emlinh/garmentviet/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/clickGo
+HTTP_REFERER=http://localhost:8888/emlinh/garmentviet/index.php/location
+---
