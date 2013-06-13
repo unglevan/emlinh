@@ -93,7 +93,7 @@ INSERT INTO `image` (`id`, `File`, `Color`, `ColorEN`, `Kind`, `ProductID`) VALU
 CREATE TABLE IF NOT EXISTS `Location` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nameVN` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `NameEN` varchar(20) NOT NULL,
+  `nameEN` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `Location` (
 -- Dumping data for table `Location`
 --
 
-INSERT INTO `Location` (`id`, `nameVN`, `NameEN`) VALUES
+INSERT INTO `Location` (`id`, `nameVN`, `nameEN`) VALUES
 (1, 'Hà Nội', 'Ha Noi'),
 (2, 'Đà Nẵng', 'Da Nang'),
 (3, 'Hồ Chí Minh', 'Ho Chi Minh');
