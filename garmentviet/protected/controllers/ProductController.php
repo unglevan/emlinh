@@ -6,7 +6,7 @@ class ProductController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/column3';
 
 	/**
 	 * @return array action filters
@@ -28,15 +28,15 @@ class ProductController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'detail'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'detail'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete', 'detail'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -120,14 +120,23 @@ class ProductController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
+	public function actionIndex($catalogID)
 	{
-		$dataProvider=new CActiveDataProvider('Product');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+		$products = Product::model()->getByCatalogID($catalogID);
+		$this->render("index", array(
+		    'products'	=> $products,
 		));
 	}
 
+	public function actionDetail($ID, $color)
+	{
+		$product = Product::model()->findByPk($ID);
+		$this->render('detail', array(
+		    'model'	=> $product,
+		    'color'	=> $color
+		));
+	}
+	
 	/**
 	 * Manages all models.
 	 */
