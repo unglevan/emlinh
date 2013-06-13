@@ -1,23 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "Catalog".
+ * This is the model class for table "catalog".
  *
- * The followings are the available columns in table 'Catalog':
+ * The followings are the available columns in table 'catalog':
  * @property integer $id
- * @property string $NameVN
- * @property string $NameEN
- * @property string $SubNameVN
- * @property string $SubNameEn
+ * @property string $subNameVN
+ * @property string $subNameEN
+ * @property string $nameEN
+ * @property string $nameVN
  */
 class Catalog extends CActiveRecord
 {
-	
 	public function getAll()
 	{
 		return $this->findAll();
 	}
-	
 	
 	/**
 	 * Returns the static model of the specified AR class.
@@ -34,7 +32,7 @@ class Catalog extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'Catalog';
+		return 'catalog';
 	}
 
 	/**
@@ -45,11 +43,11 @@ class Catalog extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('NameVN, NameEN, SubNameVN, SubNameEn', 'required'),
-			array('NameVN, NameEN, SubNameVN, SubNameEn', 'length', 'max'=>50),
+			array('subNameVN, subNameEN, nameEN, nameVN', 'required'),
+			array('subNameVN, subNameEN, nameEN, nameVN', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, NameVN, NameEN, SubNameVN, SubNameEn', 'safe', 'on'=>'search'),
+			array('id, subNameVN, subNameEN, nameEN, nameVN', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -71,10 +69,10 @@ class Catalog extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'NameVN' => 'Name Vn',
-			'NameEN' => 'Name En',
-			'SubNameVN' => 'Sub Name Vn',
-			'SubNameEn' => 'Sub Name En',
+			'subNameVN' => 'Sub Name Vn',
+			'subNameEN' => 'Sub Name En',
+			'nameEN' => 'Name En',
+			'nameVN' => 'Name Vn',
 		);
 	}
 
@@ -90,10 +88,10 @@ class Catalog extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('NameVN',$this->NameVN,true);
-		$criteria->compare('NameEN',$this->NameEN,true);
-		$criteria->compare('SubNameVN',$this->SubNameVN,true);
-		$criteria->compare('SubNameEn',$this->SubNameEn,true);
+		$criteria->compare('subNameVN',$this->subNameVN,true);
+		$criteria->compare('subNameEN',$this->subNameEN,true);
+		$criteria->compare('nameEN',$this->nameEN,true);
+		$criteria->compare('nameVN',$this->nameVN,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

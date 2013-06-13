@@ -23,6 +23,6 @@ class LocationController extends Controller
 	 */
 	public function actionClickGo()
 	{
-		$this->redirect($this->createUrl('product/view'));
+		$this->redirect($this->createUrl('site/index'));
 	}
 }
