@@ -1,17 +1,15 @@
 <?php
 /* @var $this ProductController */
 /* @var $dataProvider CActiveDataProvider */
-
-
-$this->menu=array(
-	array('label'=>'Create Product', 'url'=>array('create')),
-	array('label'=>'Manage Product', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Products</h1>
+<?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs))?>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+<div class="products">
+	<?php foreach($products as $product)
+	{
+		$this->renderPartial('product', array('model' => $product));
+	}?>
+</div>
+
+<?php $this->renderPartial('/layouts/imageView', array('productImages' => $productImages))?>

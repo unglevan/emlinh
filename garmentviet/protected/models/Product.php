@@ -18,6 +18,25 @@
  */
 class Product extends CActiveRecord
 {
+	const PRODUCT_LIMIT = 3;
+	
+	public function getLastestProductImage()
+	{
+		$condition = array(
+		    'order' => "Date",
+		    'limit' => self::PRODUCT_LIMIT,
+		);
+		return $this->findAll($condition);
+	}
+	
+	public function getByCatalogID($catalogID)
+	{
+		$condition = array(
+		    'condition' => "CatalogID = $catalogID",
+		);
+		return $this->findAll($condition);
+	}
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -63,6 +82,9 @@ class Product extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+		    'images'	=> array(self::HAS_MANY, 'Image', 'ProductID', 'condition' => "Kind = 'body'"),
+		    'imagesNobody'	=> array(self::HAS_MANY, 'Image', 'ProductID', 'condition' => "Kind = 'nobody'"),
+		    'imagesAll'	=> array(self::HAS_MANY, 'Image', 'ProductID',),
 		);
 	}
 

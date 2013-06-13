@@ -470,3 +470,12 @@ fieldset input[type="text"], input[type="password"] {
 
 #footer-menu .current_page_item a {
 }
+
+.pa10
+{
+	padding: 10px;
+}
+.center
+{
+	text-align: center;
+}

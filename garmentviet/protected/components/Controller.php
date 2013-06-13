@@ -23,9 +23,8 @@ class Controller extends CController
 	
 	public function render($view, $data = null, $return = false)
 	{
-		
-		
-		
+		$data["catalogs"] = Catalog::model()->getAll();
+		$data['productImages'] = Product::model()->getLastestProductImage(); 
 		parent::render($view, $data, $return);
 	}
 }
