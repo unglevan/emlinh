@@ -67,15 +67,15 @@ class Fixinformation extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'home' => 'Home',
-			'about' => 'About',
-			'shopping' => 'Shopping',
-			'contact' => 'Contact',
-			'home_en' => 'Home En',
-			'about_en' => 'About En',
-			'shopping_en' => 'Shopping En',
-			'contact_en' => 'Contact En',
+			'id' => 'Cái này k sửa',
+			'home' => 'Nội dung trang chủ bằng tiếng việt',
+			'about' => 'Nội dung Về chúng tôi bằng tiếng việt',
+			'shopping' => 'Nội dung Hướng dẫn mua hàng bằng tiếng việt',
+			'contact' => 'Nội dung Liên Hệ bằng tiếng việt',
+			'home_en' => 'Nội dung Trang Chủ bằng tiếng anh',
+			'about_en' => 'Nội dung Về chúng tôi bằng tiếng anh',
+			'shopping_en' => 'Nội dung Hướng dẫn mua hàng bằng tiếng anh',
+			'contact_en' => 'Nội dung Liên Hệ bằng tiếng anh',
 		);
 	}
 

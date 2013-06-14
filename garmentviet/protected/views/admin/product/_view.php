@@ -6,7 +6,7 @@
 <div class="view">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
+	<?php echo CHtml::link(CHtml::encode($data->id), array('/admin/ProductView', 'id'=>$data->id)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('NameVN')); ?>:</b>
@@ -33,7 +33,7 @@
 	<?php echo CHtml::encode($data->PriceUSD); ?>
 	<br />
 
-	<?php /*
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CatalogID')); ?>:</b>
 	<?php echo CHtml::encode($data->CatalogID); ?>
 	<br />
@@ -50,6 +50,6 @@
 	<?php echo CHtml::encode($data->Size); ?>
 	<br />
 
-	*/ ?>
+	 ?>
 
 </div>
