@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'File'); ?>
-		<?php echo $form->textField($model,'File',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->textField($model,'File',array('size'=>15,'maxlength'=>15)); ?>
 		<?php echo $form->error($model,'File'); ?>
 	</div>
 
@@ -35,15 +35,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Kind'); ?>
-		<?php echo $form->textField($model,'Kind',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo CHtml::dropDownList('Image[Kind]', 1, array('body','nobody','other'));?>
 		<?php echo $form->error($model,'Kind'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'ProductID'); ?>
-		<?php echo $form->textField($model,'ProductID'); ?>
-		<?php echo $form->error($model,'ProductID'); ?>
-	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

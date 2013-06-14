@@ -5,7 +5,13 @@
 ?>
 
 <div class="form">
+<?php 
+$cities = Location::model()->getAll();
+$dataDDL = CHtml::listData($cities,'id', 'nameEN');
 
+$catalog = Catalog::model()->findAll();
+$catalogDDL = CHtml::listData($catalog, 'id', 'subNameVN');
+?>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'product-form',
 	'enableAjaxValidation'=>false,
@@ -53,28 +59,26 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CatalogID'); ?>
-		<?php // echo CHtml::dropDownList('city', 1, $dataDDL); ?>
+		 <?php echo CHtml::dropDownList('Product[CatalogID]', 1, $catalogDDL);?>
 		<?php echo $form->error($model,'CatalogID'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'LocationID'); ?>
-		<?php echo $form->textField($model,'LocationID'); ?>
+		<?php //echo CHtml::dropDownList($model,1,$dataDDL); ?>
+            <?php echo CHtml::dropDownList('Product[LocationID]', 1, $dataDDL);?>
 		<?php echo $form->error($model,'LocationID'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'Date'); ?>
-		<?php echo $form->textField($model,'Date'); ?>
-		<?php echo $form->error($model,'Date'); ?>
-	</div>
+        
+     
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Size'); ?>
 		<?php echo $form->textField($model,'Size',array('size'=>15,'maxlength'=>15)); ?>
 		<?php echo $form->error($model,'Size'); ?>
 	</div>
-
+        
+        
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

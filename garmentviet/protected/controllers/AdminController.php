@@ -22,7 +22,7 @@ class AdminController extends Controller
 		{
 			$model->attributes=$_POST['Product'];
 			if($model->save())
-				$this->redirect(array('admin/ProductView','id'=>$model->id));
+				$this->redirect(array('image/create','productID'=>$model->id));
 		}
 
 		$this->render('/admin/product/create',array(
@@ -37,7 +37,7 @@ class AdminController extends Controller
 	 */
 	public function actionProductUpdate($id)
 	{
-		$model=$this->loadProductModeltModel($id);
+		$model=$this->loadProductModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -49,7 +49,7 @@ class AdminController extends Controller
 				$this->redirect(array('admin/ProductView','id'=>$model->id));
 		}
 
-		$this->render('update',array(
+		$this->render('/admin/product/update',array(
 			'model'=>$model,
 		));
 	}
@@ -243,3 +243,4 @@ class AdminController extends Controller
 	}
 
 }
+

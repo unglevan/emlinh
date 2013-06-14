@@ -60,7 +60,7 @@ class ImageController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionCreate($productID)
 	{
 		$model=new Image;
 
@@ -68,10 +68,11 @@ class ImageController extends Controller
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Image']))
-		{
+		{       
 			$model->attributes=$_POST['Image'];
+                        $model->ProductID = $productID;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('create','productID'=>$productID));
 		}
 
 		$this->render('create',array(
@@ -158,6 +159,7 @@ class ImageController extends Controller
 		return $model;
 	}
 
+        
 	/**
 	 * Performs the AJAX validation.
 	 * @param Image $model the model to be validated

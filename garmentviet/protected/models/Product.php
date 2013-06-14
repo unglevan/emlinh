@@ -64,7 +64,7 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('NameVN, NameEN, DescriptionVN, DescriptionEN, PriceVND, PriceUSD, CatalogID, LocationID, Date, Size', 'required'),
+			array('NameVN, NameEN, DescriptionVN, DescriptionEN, PriceVND, PriceUSD, CatalogID, LocationID, Size', 'required'),
 			array('CatalogID, LocationID', 'numerical', 'integerOnly'=>true),
 			array('PriceVND, PriceUSD', 'numerical'),
 			array('NameVN, NameEN', 'length', 'max'=>50),
@@ -136,4 +136,10 @@ class Product extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function beforeSave() {
+            $this->Date = date("Y/m/d");
+            parent::beforeSave();
+            return TRUE;
+        }
 }

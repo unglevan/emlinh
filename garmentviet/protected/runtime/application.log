@@ -3798,3 +3798,514 @@ Stack trace:
 REQUEST_URI=/emlinh/garmentviet/index.php/admin/NewsView/3
 HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsIndex
 ---
+2013/06/14 18:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/view')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsAdmin
+---
+2013/06/14 18:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/view')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsAdmin
+---
+2013/06/14 18:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/update')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/update/2
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsAdmin
+---
+2013/06/14 18:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/update')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/update/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsAdmin
+---
+2013/06/14 19:12:04 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "_form".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\Image\create.php(18): CController->renderPartial('_form', Array)
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('/admin/Image/cr...', Array, true)
+#5 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(275): CController->render('/admin/Image/cr...', Array)
+#6 [internal function]: AdminController->actionImageCreate('4')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminController), Object(ReflectionMethod), Array)
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('ImageCreate')
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ImageCrea...')
+#14 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ImageCreate?productID=4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/productcreate
+---
+2013/06/14 19:25:43 [error] [exception.CException] exception 'CException' with message 'ImageController cannot find the requested view "/admin/Image/_form".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\garmentviet\protected\views\image\create.php(18): CController->renderPartial('/admin/Image/_f...', Array)
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#5 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\ImageController.php(79): CController->render('create', Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): ImageController->actionCreate()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#16 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/create')
+#17 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/create?productID=5
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/productcreate
+---
+2013/06/14 19:32:40 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php:1841)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php(18): AdminController->renderPartial()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#7 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(30): AdminController->render()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductCreate()
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductCreate
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php (10)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php (18)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (30)
+2013/06/14 19:33:50 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php:1841)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php(18): AdminController->renderPartial()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#7 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(30): AdminController->render()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductCreate()
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductCreate
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php (10)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php (18)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (30)
+2013/06/14 19:33:52 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php:1841)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php(18): AdminController->renderPartial()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#7 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(30): AdminController->render()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductCreate()
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductCreate
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php (10)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php (18)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (30)
+2013/06/14 19:33:52 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php:1841)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php(18): AdminController->renderPartial()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#7 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(30): AdminController->render()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductCreate()
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductCreate
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php (10)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php (18)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (30)
+2013/06/14 19:33:53 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php:1841)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#2 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php(18): AdminController->renderPartial()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#7 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(30): AdminController->render()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductCreate()
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductCreate
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php (10)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php (18)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (30)
+2013/06/14 19:34:24 [warning] [application] Failed to set unsafe attribute "Date" of "Product".
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (23)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/14 19:34:31 [warning] [application] Failed to set unsafe attribute "Date" of "Product".
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (23)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/14 19:34:47 [warning] [application] Failed to set unsafe attribute "Date" of "Product".
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (23)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/14 19:34:47 [error] [php] Object of class Product could not be converted to string (C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php:1918)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php(65): dropDownList()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#4 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php(18): AdminController->renderPartial()
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#9 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(30): AdminController->render()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductCreate()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductCreate
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php (65)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php (18)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (30)
+2013/06/14 19:34:55 [error] [php] Object of class Product could not be converted to string (C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php:1918)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php(65): dropDownList()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#4 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php(18): AdminController->renderPartial()
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): AdminController->renderFile()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#9 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(30): AdminController->render()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductCreate()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductCreate
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php (65)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php (18)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (30)
+2013/06/14 19:35:44 [warning] [application] Failed to set unsafe attribute "Date" of "Product".
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (23)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/14 19:42:07 [warning] [application] Failed to set unsafe attribute "Date" of "Product".
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (23)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/14 19:42:25 [warning] [application] Failed to set unsafe attribute "Date" of "Product".
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (23)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/14 19:42:49 [warning] [application] Failed to set unsafe attribute "Date" of "Product".
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (23)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/14 23:18:09 [error] [exception.CException] exception 'CException' with message 'ImageController cannot find the requested view "view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\ImageController.php(56): CController->render('view', Array)
+#2 [internal function]: ImageController->actionView('6')
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ImageController), Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ImageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/view')
+#15 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/6
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/create?productID=6
+---
+2013/06/14 23:40:02 [error] [exception.CException] exception 'CException' with message 'ImageController cannot find the requested view "view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\ImageController.php(56): CController->render('view', Array)
+#2 [internal function]: ImageController->actionView('7')
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ImageController), Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ImageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/view')
+#15 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/7
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/create?productID=7
+---
+2013/06/14 23:41:01 [error] [exception.CException] exception 'CException' with message 'ImageController cannot find the requested view "view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\ImageController.php(56): CController->render('view', Array)
+#2 [internal function]: ImageController->actionView('8')
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ImageController), Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ImageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/view')
+#15 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/8
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/create?productID=7
+---
+2013/06/14 23:47:48 [error] [exception.CException] exception 'CException' with message 'ImageController cannot find the requested view "view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\ImageController.php(56): CController->render('view', Array)
+#2 [internal function]: ImageController->actionView('9')
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ImageController), Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ImageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/view')
+#15 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/9
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/create?productID=7
+---
+2013/06/14 23:53:39 [error] [exception.CException] exception 'CException' with message 'Property "Product.Number of Images" is not defined.' in C:\xampp\htdocs\emlinh\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Number of Image...')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('Number of Image...')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Product), 'Number of Image...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Product), 'Number of Image...', Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Product), 'Number of Image...', Array)
+#5 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\_form.php(83): CActiveForm->textField(Object(Product), 'Number of Image...')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\create.php(18): CController->renderPartial('/admin/product/...', Array)
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('/admin/product/...', Array, true)
+#14 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(30): CController->render('/admin/product/...', Array)
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductCreate()
+#16 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('productcreate')
+#20 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/productcr...')
+#21 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/productcreate
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 00:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/update')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/update/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductView/1
+---
+2013/06/15 00:10:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('delete')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/delete')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/delete/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductView/1
+---
+2013/06/15 00:10:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/index
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductView/1
+---
+2013/06/15 00:13:48 [error] [exception.CException] exception 'CException' with message 'AdminController and its behaviors do not have a method or closure named "loadProductModeltModel".' in C:\xampp\htdocs\emlinh\yii\framework\base\CComponent.php:265
+Stack trace:
+#0 [internal function]: CComponent->__call('loadProductMode...', Array)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(40): AdminController->loadProductModeltModel('1')
+#2 [internal function]: AdminController->actionProductUpdate('1')
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('ProductUpdate')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ProductUp...')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductUpdate/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductView/1
+---
+2013/06/15 00:14:25 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "update".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(54): CController->render('update', Array)
+#2 [internal function]: AdminController->actionProductUpdate('1')
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('ProductUpdate')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ProductUp...')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductUpdate/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductView/1
+---
+2013/06/15 00:15:15 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "admin/product/update".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('admin/product/u...', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(54): CController->render('admin/product/u...', Array)
+#2 [internal function]: AdminController->actionProductUpdate('1')
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('ProductUpdate')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ProductUp...')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductUpdate/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductView/1
+---
+2013/06/15 00:15:33 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "_form".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\update.php(21): CController->renderPartial('_form', Array)
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('/admin/product/...', Array, true)
+#5 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(54): CController->render('/admin/product/...', Array)
+#6 [internal function]: AdminController->actionProductUpdate('1')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminController), Object(ReflectionMethod), Array)
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('ProductUpdate')
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ProductUp...')
+#14 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/ProductUpdate/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductView/1
+---
+2013/06/15 00:16:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/update')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/update/4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductAdmin
+---

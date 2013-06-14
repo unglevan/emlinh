@@ -98,4 +98,11 @@ class Image extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+         public function beforeSave() {
+            $this->File = "/images/Product/images/Product/".$this->File;
+           
+            parent::beforeSave();
+            return TRUE;
+        }
 }

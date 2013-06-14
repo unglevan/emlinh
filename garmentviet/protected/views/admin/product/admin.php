@@ -48,7 +48,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'id',
 		'NameVN',
 		'NameEN',
-		'DescriptionVN',
+		/*'DescriptionVN',
 		'DescriptionEN',
 		'PriceVND',
 		
@@ -56,7 +56,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'CatalogID',
 		'LocationID',
 		'Date',
-		'Size',
+		'Size',*/
 		
 		array(
 			'class'=>'CButtonColumn',

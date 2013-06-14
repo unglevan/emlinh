@@ -43,11 +43,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'id',
 		'title_vi',
 		'title_en',
-		'content_vi',
+		/*'content_vi',
 		'content_en',
 		'datepost',
 		
-		'type',
+		'type',*/
 		
 		array(
 			'class'=>'CButtonColumn',

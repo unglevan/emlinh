@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Product', 'url'=>array('index')),
-	array('label'=>'Create Product', 'url'=>array('create')),
-	array('label'=>'Update Product', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Product', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Product', 'url'=>array('admin')),
+	array('label'=>'List Product', 'url'=>array('/admin/ProductIndex')),
+	array('label'=>'Create Product', 'url'=>array('/admin/ProductCreate')),
+	array('label'=>'Update Product', 'url'=>array('/admin/ProductUpdate', 'id'=>$model->id)),
+	array('label'=>'Delete Product', 'url'=>'#', 'linkOptions'=>array('submit'=>array('/admin/ProductDelete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage Product', 'url'=>array('/admin/ProductAdmin')),
 );
 ?>
 
