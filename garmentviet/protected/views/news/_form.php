@@ -29,21 +29,25 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content_vi'); ?>
-		<?php echo $form->textArea($model,'content_vi',array('rows'=>6, 'cols'=>50)); ?>
+		<?php $this->widget('application.extensions.tinymce.ETinyMce', array( 
+                     "model" => $model,
+                    'attribute'=>'content_vi',
+                    'useSwitch' => false,
+                    'editorTemplate'=>'full')); ?>
 		<?php echo $form->error($model,'content_vi'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content_en'); ?>
-		<?php echo $form->textArea($model,'content_en',array('rows'=>6, 'cols'=>50)); ?>
+		<?php $this->widget('application.extensions.tinymce.ETinyMce', array( 
+                    "model" => $model,
+                    'attribute'=>'content_en',
+                    'useSwitch' => false,
+                    'editorTemplate'=>'full')); ?>
 		<?php echo $form->error($model,'content_en'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'datepost'); ?>
-		<?php echo $form->textField($model,'datepost'); ?>
-		<?php echo $form->error($model,'datepost'); ?>
-	</div>
+	
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'type'); ?>

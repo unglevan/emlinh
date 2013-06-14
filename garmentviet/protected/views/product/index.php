@@ -5,7 +5,7 @@
 
 <?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs))?>
 
-<div class="products">
+<div class="products" id="content2">
 	<?php foreach($products as $product)
 	{
 		$this->renderPartial('product', array('model' => $product));

@@ -14,7 +14,25 @@
  */
 class News extends CActiveRecord
 {
-	/**
+   public function getLastestNews()
+	{
+		$condition = array(
+                    'condition' =>"type = 1",
+		    'order' => "datepost",
+		);
+		return $this->findAll($condition);
+	}
+        
+        public function getLastestCampaigns()
+	{
+		$condition = array(
+                    'condition' =>"type = 2",
+		    'order' => "datepost",
+		);
+		return $this->findAll($condition);
+	}
+
+    /**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
 	 * @return News the static model class
@@ -40,7 +58,7 @@ class News extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title_vi, title_en, content_vi, content_en, datepost, type', 'required'),
+			array('title_vi, title_en, content_vi, content_en, type', 'required'),
 			array('title_vi, title_en', 'length', 'max'=>50),
 			array('type', 'length', 'max'=>15),
 			// The following rule is used by search().
@@ -99,4 +117,10 @@ class News extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function beforeSave() {
+            $this->datepost = date("Y/m/d");
+            parent::beforeSave();
+            return true;
+        }
 }

@@ -6,40 +6,71 @@
 	<meta name="language" content="en" />
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
 
-<div class="container" id="page">
+<div class="container">
+    <div id="header"
+		<div id="logo"><?php 
+                $language =Yii::app()->request->cookies['language']->value;
+                if ($language == Location::LANGUAGE_ENGLISH) 
+                    echo CHtml::image(Yii::app()->baseUrl."/images/logo_english.png");
+                else echo CHtml::image(Yii::app()->baseUrl."/images/logo.png");?>
+                </div>
+    </div>
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About Us', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'News', 'url'=>array('/site/contact')),
-				array('label'=>'Campaign', 'url'=>array('/site/login')),
-				array('label'=>'Shopping Guide', 'url'=>array('/site/login')),
-				 array('label'=>'Contact', 'url'=>array('/site/login')),
-			),
-		)); ?>
+	<div id="wrapper">
+            <div id="menu">
+		<?php 
+                    $language =Yii::app()->request->cookies['language']->value;
+                    if ($language == Location::LANGUAGE_ENGLISH)
+                    {
+                        $this->widget('zii.widgets.CMenu',array(
+                            'items'=>array(
+                                    array('label'=>'Home', 'url'=>array('/site/index')),
+                                    array('label'=>'About Us', 'url'=>array('/site/about', )),
+                                    array('label'=>'News', 'url'=>array('/site/news',)),
+                                    array('label'=>'Campaign', 'url'=>array('/site/campaign',)),
+                                    array('label'=>'Shopping Guide', 'url'=>array('/site/shoppingguide',)),
+                                     array('label'=>'Contact', 'url'=>array('/site/contact')),
+                            ),
+                        ));
+                    
+                     } 
+                     else
+                     {
+                         $this->widget('zii.widgets.CMenu',array(
+                            'items'=>array(
+                                    array('label'=>'Trang Chủ', 'url'=>array('/site/index')),
+                                    array('label'=>'Giới Thiệu', 'url'=>array('/site/page', 'view'=>'about')),
+                                    array('label'=>'Tin Tức', 'url'=>array('/site/page', 'view'=>'news')),
+                                    array('label'=>'Khuyến Mãi', 'url'=>array('/site/page', 'view'=>'campaign')),
+                                    array('label'=>'Hướng Dẫn Mua Hàng', 'url'=>array('/site/page','view'=>'shopingguide')),
+                                     array('label'=>'Liên Hệ', 'url'=>array('/site/contact')),
+                            ),
+                        )); 
+                     }
+                     ?>
+                
 	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
+      
+        </div>
+    <div id="content">
+	  <?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
+    </div>
 
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-
+    
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>

@@ -3,10 +3,23 @@
 /* @var $model ContactForm */
 /* @var $form CActiveForm */
 
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
-$this->breadcrumbs=array(
+/* @var $contac Fixinformation */
+
+$language = Yii::app()->request->cookies['language']->value;
+if ($language == Location::LANGUAGE_ENGLISH){
+    $this->pageTitle=Yii::app()->name . ' - Contact';
+    $this->breadcrumbs=array(
 	'Contact',
-);
+    );
+}
+
+else
+{
+    $this->pageTitle=Yii::app()->name . ' - Liên Hệ';
+    $this->breadcrumbs=array(
+	'Liên Hệ',
+    );
+}
 ?>
 
 <h1>Contact Us</h1>
@@ -17,11 +30,21 @@ $this->breadcrumbs=array(
 	<?php echo Yii::app()->user->getFlash('contact'); ?>
 </div>
 
-<?php else: ?>
+<?php else: 
+    if ($language == Location::LANGUAGE_ENGLISH) {
+        echo $contact->contact_en;
+        echo "<p>
+    If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+    </p>";
+    }
+    else {
+         echo $contact->contact_en;
+        echo "<p>
+    Xin vui lòng điền các yêu cầu vào form dưới đây và gửi cho chúng tôi. Chúng tôi sẽ trả lời bạn ngay sau khi nhận được. Xin chân thành cảm ơn!
+    </p>";
+    }
+?>
 
-<p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-</p>
 
 <div class="form">
 

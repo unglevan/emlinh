@@ -1,12 +1,38 @@
 <?php
 /* @var $this SiteController */
+/* @var $this FixinformationController */
+/* @var $about Fixinformation */
 
-$this->pageTitle=Yii::app()->name . ' - About';
-$this->breadcrumbs=array(
+$language = Yii::app()->request->cookies['language']->value;
+
+if ($language == Location::LANGUAGE_ENGLISH){
+    $this->pageTitle=Yii::app()->name . ' - About';
+    $this->breadcrumbs=array(
 	'About',
-);
-?>
-<h1>About</h1>
+    );
+}
 
-<p>This is a "static" page. You may change the content of this page
-by updating the file <code><?php echo __FILE__; ?></code>.</p>
+else
+{
+    $this->pageTitle=Yii::app()->name . ' - Giới Thiệu';
+    $this->breadcrumbs=array(
+	'Giới Thiệu',
+    );
+}
+?>
+<?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs))?>
+
+<div class="about" id="content2">
+    <?php 
+       if($language == Location::LANGUAGE_ENGLISH) {
+            echo "<h1>Home</h1>";
+            echo $about->about_en;
+        }
+        else {
+            echo "<h1>Trang Chủ</h1>"; 
+             echo $about->about;
+        }
+    ?>
+</div>
+
+<?php $this->renderPartial('/layouts/imageView', array('productImages' => $productImages))?>

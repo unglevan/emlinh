@@ -28,6 +28,7 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+            
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
@@ -52,6 +53,7 @@ class SiteController extends Controller
 	 */
 	public function actionContact()
 	{
+              $contact = Fixinformation::model()->findAll();
 		$model=new ContactForm;
 		if(isset($_POST['ContactForm']))
 		{
@@ -70,7 +72,7 @@ class SiteController extends Controller
 				$this->refresh();
 			}
 		}
-		$this->render('contact',array('model'=>$model));
+		$this->render('contact',array('model'=>$model, 'contact'=>$contact));
 	}
 
 	/**
@@ -107,4 +109,52 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+        
+        public function actionNews()
+        {
+            $news = News::model()->getLastestNews();
+		$this->render("/site/pages/news", array(
+		    'model'	=> $news,
+		));
+        }
+        
+        public function actionCampaign()
+        {
+            $campaign = News::model()->getLastestCampaigns();
+		$this->render("/site/pages/campaign", array(
+		    'model'	=> $campaign,
+		));
+        }
+        
+         public function actionHome(){
+            $home = Fixinformation::model()->findAll();
+            $this->render("/site/index", array(
+		    'home'	=> $home[0],
+		));
+        }
+        
+        public function actionAbout(){
+            $about = Fixinformation::model()->findAll();
+
+            $this->render("/site/pages/about", array(
+		    'about'	=> $about[0],
+		));
+        }
+        
+        public function actionShoppingguide(){
+            $shopping = Fixinformation::model()->findAll();
+            $this->render("/site/pages/shoppingguide", array(
+		    'shopping'	=> $shopping[0],
+		));
+        }
+        
+
+                public function render($view, $data = null, $return = false)
+	{
+                $location =  Yii::app()->request->cookies['location']->value;
+		$data["catalogs"] = Catalog::model()->getAll();
+		$data['productImages'] = Product::model()->getLastestProductImage($location); 
+		parent::render($view, $data, $return);
+	}
+        
 }

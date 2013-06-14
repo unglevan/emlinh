@@ -122,7 +122,8 @@ class ProductController extends Controller
 	 */
 	public function actionIndex($catalogID)
 	{
-		$products = Product::model()->getByCatalogID($catalogID);
+                $location =  Yii::app()->request->cookies['location']->value;
+		$products = Product::model()->getByCatalogID($catalogID, $location);
 		$this->render("index", array(
 		    'products'	=> $products,
 		));
@@ -178,5 +179,13 @@ class ProductController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+        
+         public function render($view, $data = null, $return = false)
+	{
+                $location =  Yii::app()->request->cookies['location']->value;
+		$data["catalogs"] = Catalog::model()->getAll();
+		$data['productImages'] = Product::model()->getLastestProductImage($location); 
+		parent::render($view, $data, $return);
 	}
 }

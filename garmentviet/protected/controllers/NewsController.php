@@ -28,7 +28,7 @@ class NewsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'news'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -169,5 +169,20 @@ class NewsController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+        
+        public function actionNews(){
+                $news = News::model()->getLastestNews();
+		$this->render("/site/pages/news", array(
+		    'model'	=> $news,
+		));
+        }
+        
+         public function render($view, $data = null, $return = false)
+	{
+                $location =  Yii::app()->request->cookies['location']->value;
+		$data["catalogs"] = Catalog::model()->getAll();
+		$data['productImages'] = Product::model()->getLastestProductImage($location); 
+		parent::render($view, $data, $return);
 	}
 }

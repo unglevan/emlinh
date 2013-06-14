@@ -20,19 +20,20 @@ class Product extends CActiveRecord
 {
 	const PRODUCT_LIMIT = 3;
 	
-	public function getLastestProductImage()
+	public function getLastestProductImage($location = Location::LANGUAGE_ENGLISH)
 	{
 		$condition = array(
+                    'condition' => "locationID = $location",
 		    'order' => "Date",
 		    'limit' => self::PRODUCT_LIMIT,
 		);
 		return $this->findAll($condition);
 	}
 	
-	public function getByCatalogID($catalogID)
+	public function getByCatalogID($catalogID, $location)
 	{
 		$condition = array(
-		    'condition' => "CatalogID = $catalogID",
+		    'condition' => "CatalogID = $catalogID AND locationID = $location",
 		);
 		return $this->findAll($condition);
 	}

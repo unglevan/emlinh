@@ -23,6 +23,11 @@ class LocationController extends Controller
 	 */
 	public function actionClickGo()
 	{
+            
+            $language = $_POST['language'];
+            $location = $_POST['city'];
+            Yii::app()->request->cookies['language'] = new CHttpCookie('language', $language);
+            Yii::app()->request->cookies['location'] = new CHttpCookie('location', $location);
 		$this->redirect($this->createUrl('site/index'));
 	}
 }
