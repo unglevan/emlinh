@@ -23,18 +23,6 @@ class SiteController extends Controller
 	}
 
 	/**
-	 * This is the default 'index' action that is invoked
-	 * when an action is not explicitly requested by users.
-	 */
-	public function actionIndex()
-	{
-            
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
-	}
-
-	/**
 	 * This is the action to handle external exceptions.
 	 */
 	public function actionError()
@@ -126,7 +114,7 @@ class SiteController extends Controller
 		));
         }
         
-         public function actionHome(){
+         public function actionIndex(){
             $home = Fixinformation::model()->findAll();
             $this->render("/site/index", array(
 		    'home'	=> $home[0],
