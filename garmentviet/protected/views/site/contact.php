@@ -21,7 +21,8 @@ else
     );
 }
 ?>
-
+<?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs))?>
+<div id="content2"
 <h1>Contact Us</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
@@ -38,7 +39,7 @@ else
     </p>";
     }
     else {
-         echo $contact->contact_en;
+         echo $contact->contact;
         echo "<p>
     Xin vui lòng điền các yêu cầu vào form dưới đây và gửi cho chúng tôi. Chúng tôi sẽ trả lời bạn ngay sau khi nhận được. Xin chân thành cảm ơn!
     </p>";
@@ -106,3 +107,5 @@ else
 </div><!-- form -->
 
 <?php endif; ?>
+</div>
+<?php $this->renderPartial('/layouts/imageView', array('productImages' => $productImages))?>

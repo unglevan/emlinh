@@ -11,6 +11,31 @@ class AdminController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
+    
+    public function accessRules()
+	{
+		return array(
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('index','view'),
+				'users'=>array('*'),
+			),
+			
+		
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('admin','delete','create','update'),
+				'users'=>array('admin'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+	}
+
+    
+     public function actionIndex()
+ {
+       $this->redirect(array('login'));
+  }
 	public function actionProductCreate()
 	{
 		$model=new Product;
@@ -46,7 +71,7 @@ class AdminController extends Controller
 		{
 			$model->attributes=$_POST['Product'];
 			if($model->save())
-				$this->redirect(array('admin/ProductView','id'=>$model->id));
+				$this->redirect(array('image/admin','productID'=>$model->id));
 		}
 
 		$this->render('/admin/product/update',array(
@@ -242,5 +267,40 @@ class AdminController extends Controller
 		return $model;
 	}
 
+        	public function actionLogin()
+	{
+		$model=new LoginForm;
+
+		// if it is ajax validation request
+		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+
+		// collect user input data
+		if(isset($_POST['LoginForm']))
+		{
+			$model->attributes=$_POST['LoginForm'];
+			// validate user input and redirect to the previous page if valid
+			if($model->validate() && $model->login())
+				$this->redirect('ProductCreate');
+		}
+		// display the login form
+		$this->render('/site/login',array('model'=>$model));
+	}
+
+	/**
+	 * Logs out the current user and redirect to homepage.
+	 */
+	public function actionLogout()
+	{
+		Yii::app()->user->logout();
+		$this->redirect(Yii::app()->homeUrl);
+	}
+        public function actionUpload()
+        {
+            $this->render('/admin/upload');
+        }
 }
 

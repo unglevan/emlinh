@@ -60,6 +60,24 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		
 		array(
 			'class'=>'CButtonColumn',
-		),
-	),
+		
+            'template'=>'{delete}{update}{view}',
+       'buttons'=>array
+      (
+        'update' => array
+          (
+          'url'=>'$this->grid->controller->createUrl("/admin/ProductUpdate", array("id"=>$data->primaryKey))',
+          ),
+          'delete' => array
+          (
+          'url'=>'$this->grid->controller->createUrl("/admin/ProductDelete", array("id"=>$data->primaryKey))',
+          ),
+           'view' => array
+          (
+          'url'=>'$this->grid->controller->createUrl("/admin/ProductView", array("id"=>$data->primaryKey))',
+         ),
+       ),
+      ),
+            ),
+	
 )); ?>

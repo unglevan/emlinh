@@ -1,3 +1,8 @@
+body
+{
+background-image:url('/images/Product/images/Product/bg.jpg');
+
+}
 #wrapper{
         width: 1000px;
 	height: 60px;

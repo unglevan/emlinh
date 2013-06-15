@@ -14,7 +14,7 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
+    <body background="<?php echo Yii::app()->request->baseUrl; ?>/images/Product/images/Product/bg.jpg">
 
 <div class="container">
     <div id="header"
@@ -49,10 +49,10 @@
                          $this->widget('zii.widgets.CMenu',array(
                             'items'=>array(
                                     array('label'=>'Trang Chủ', 'url'=>array('/site/index')),
-                                    array('label'=>'Giới Thiệu', 'url'=>array('/site/page', 'view'=>'about')),
-                                    array('label'=>'Tin Tức', 'url'=>array('/site/page', 'view'=>'news')),
-                                    array('label'=>'Khuyến Mãi', 'url'=>array('/site/page', 'view'=>'campaign')),
-                                    array('label'=>'Hướng Dẫn Mua Hàng', 'url'=>array('/site/page','view'=>'shopingguide')),
+                                    array('label'=>'Giới Thiệu', 'url'=>array('/site/about')),
+                                    array('label'=>'Tin Tức', 'url'=>array('/site/news')),
+                                    array('label'=>'Khuyến Mãi', 'url'=>array('/site/campaign')),
+                                    array('label'=>'Hướng Dẫn Mua Hàng', 'url'=>array('/site/shoppingguide')),
                                      array('label'=>'Liên Hệ', 'url'=>array('/site/contact')),
                             ),
                         )); 

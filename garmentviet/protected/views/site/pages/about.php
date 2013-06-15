@@ -25,11 +25,11 @@ else
 <div class="about" id="content2">
     <?php 
        if($language == Location::LANGUAGE_ENGLISH) {
-            echo "<h1>Home</h1>";
+            echo "<h1>About US</h1>";
             echo $about->about_en;
         }
         else {
-            echo "<h1>Trang Chủ</h1>"; 
+            echo "<h1>Giới thiệu</h1>"; 
              echo $about->about;
         }
     ?>

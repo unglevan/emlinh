@@ -1,5 +1,5 @@
 <?php
-/* @var $this SiteController */
+/* @var $this AdminController */
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
 
@@ -34,9 +34,7 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
+		
 	</div>
 
 	<div class="row rememberMe">

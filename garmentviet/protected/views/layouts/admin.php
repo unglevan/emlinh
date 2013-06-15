@@ -32,7 +32,7 @@
 				array('label'=>'Info', 'url'=>array('/admin/InformationUpdate')),
 				array('label'=>'News', 'url'=>array('/admin/NewsIndex')),
 				array('label'=>'Product', 'url'=>array('/admin/ProductIndex')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                                array('label'=>'Upload', 'url'=>array('/admin/Upload')),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>

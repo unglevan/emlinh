@@ -4,6 +4,9 @@
 /* @var $home Fixinformation */
 
 $language = Yii::app()->request->cookies['language']->value;
+$checkPopUp = Yii::app()->request->cookies['checkPopUp']->value;
+
+var_dump($checkPopUp);
 
 ?>
 <?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs))?>

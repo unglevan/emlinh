@@ -4309,3 +4309,856 @@ Stack trace:
 REQUEST_URI=/emlinh/garmentviet/index.php/admin/update/4
 HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductAdmin
 ---
+2013/06/15 01:38:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image
+---
+2013/06/15 01:43:09 [error] [php] get_class() expects parameter 1 to be object, array given (C:\xampp\htdocs\emlinh\yii\framework\web\helpers\CHtml.php:2220)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\widgets\CActiveForm.php(547): activeLabel()
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\views\image\_search.php(15): CActiveForm->label()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): ImageController->renderInternal()
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): ImageController->renderFile()
+#5 C:\xampp\htdocs\emlinh\garmentviet\protected\views\image\admin.php(40): ImageController->renderPartial()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): ImageController->renderInternal()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): ImageController->renderFile()
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): ImageController->renderPartial()
+#10 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\ImageController.php(141): ImageController->render()
+#11 unknown(0): ImageController->actionAdmin()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): ImageController->runAction()
+#16 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): ImageController->filterAccessControl()
+#19 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#22 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): ImageController->run()
+#23 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/image/admin?productID=1
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\image\_search.php (15)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\views\image\admin.php (40)
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\ImageController.php (141)
+2013/06/15 01:43:39 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in C:\xampp\htdocs\emlinh\yii\framework\zii\widgets\CBaseListView.php:105
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\zii\widgets\grid\CGridView.php(314): CBaseListView->init()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(147): CGridView->init()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\xampp\htdocs\emlinh\garmentviet\protected\views\image\admin.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\ImageController.php(141): CController->render('admin', Array)
+#9 [internal function]: ImageController->actionAdmin('1')
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ImageController), Array)
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ImageController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/admin')
+#22 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/admin?productID=1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductUpdate/1
+---
+2013/06/15 02:18:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/update')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/update?ID=4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:20:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('image')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('image')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/image/upd...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/image/update/ID/4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:25:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('image')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('image')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/image/upd...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/image/update/ID/4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:26:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('image')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('image')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/image/upd...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/image/update/ID/4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('image')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('image')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/image/upd...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/image/update/ID/4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:27:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/update')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/update?ID=2
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:27:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/update')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/update
+---
+2013/06/15 02:28:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/update')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/update?ID=2
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:29:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('image/update')
+#10 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/image/update?0=4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:31:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "update/view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('update/view')
+#1 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/update/4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "update/view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('update/view')
+#1 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/update/4
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/image/admin?productID=1
+---
+2013/06/15 02:46:53 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in C:\xampp\htdocs\emlinh\yii\framework\zii\widgets\grid\CGridView.php:387
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\zii\widgets\grid\CGridView.php(358): CGridView->createDataColumn('{delete}{update...')
+#1 C:\xampp\htdocs\emlinh\yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('/admin/product/...', Array, true)
+#9 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(95): CController->render('/admin/product/...', Array)
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductAdmin()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('productadmin')
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/productad...')
+#16 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/productadmin
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 02:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/view')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsAdmin
+---
+2013/06/15 02:51:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/update')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/update/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsAdmin
+---
+2013/06/15 02:51:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('delete')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/delete')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/delete/1?ajax=news-grid
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsAdmin
+---
+2013/06/15 02:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/view')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/1
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/NewsAdmin
+---
+2013/06/15 02:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/login
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 03:03:42 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(265): CController->render('login', Array)
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/login
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 03:05:55 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(265): CController->render('login', Array)
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/login
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 03:05:56 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(265): CController->render('login', Array)
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/login
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 03:05:56 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(265): CController->render('login', Array)
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/login
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 03:05:56 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(265): CController->render('login', Array)
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/login
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 03:05:57 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(265): CController->render('login', Array)
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/login
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 03:05:57 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(265): CController->render('login', Array)
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/login
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 03:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/page?view=campaign
+---
+2013/06/15 03:36:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/page?view=news
+---
+2013/06/15 03:49:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/page?view=campaign
+---
+2013/06/15 03:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/page?view=campaign
+---
+2013/06/15 03:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/page?view=campaign
+---
+2013/06/15 04:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/contact
+---
+2013/06/15 04:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/contact
+---
+2013/06/15 04:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/contact
+---
+2013/06/15 04:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/contact
+---
+2013/06/15 04:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "shopingguide" was not found.' in C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/page?view=shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/contact
+---
+2013/06/15 04:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "shopingguide".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('shopingguide')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/shopinggui...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/news
+---
+2013/06/15 04:02:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "shopingguide".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('shopingguide')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/shopinggui...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/news
+---
+2013/06/15 04:02:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "shopingguide".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('shopingguide')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/shopinggui...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/news
+---
+2013/06/15 04:02:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "shopingguide".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('shopingguide')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('shopingguide')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/shopinggui...')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/shopingguide
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/news
+---
+2013/06/15 04:35:53 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "_form".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\garmentviet\protected\views\site\index.php(42): CController->renderPartial('_form', Array)
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('/site/index', Array, true)
+#5 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\SiteController.php(114): CController->render('/site/index', Array, false)
+#6 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\SiteController.php(90): SiteController->render('/site/index', Array)
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/index
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/site/index
+---
+2013/06/15 08:41:23 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in C:\xampp\htdocs\emlinh\yii\framework\zii\widgets\grid\CGridView.php:387
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\zii\widgets\grid\CGridView.php(358): CGridView->createDataColumn('{delete}{update...')
+#1 C:\xampp\htdocs\emlinh\yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\xampp\htdocs\emlinh\garmentviet\protected\views\admin\product\admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('/admin/product/...', Array, true)
+#9 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(95): CController->render('/admin/product/...', Array)
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionProductAdmin()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('productadmin')
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/productad...')
+#16 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin/productadmin
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductIndex
+---
+2013/06/15 08:43:19 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "index".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(17): CController->render('index')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+---
+2013/06/15 08:45:12 [error] [php] Object of class AdminController could not be converted to string (C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (17)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/15 08:45:36 [error] [php] Object of class AdminController could not be converted to string (C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (17)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/15 08:45:37 [error] [php] Object of class AdminController could not be converted to string (C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (17)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/15 08:45:37 [error] [php] Object of class AdminController could not be converted to string (C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (17)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/15 08:45:37 [error] [php] Object of class AdminController could not be converted to string (C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+in C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php (17)
+in C:\xampp\htdocs\emlinh\garmentviet\index.php (13)
+2013/06/15 08:46:41 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', NULL, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(17): CController->render('login')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+---
+2013/06/15 08:46:43 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', NULL, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(17): CController->render('login')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+---
+2013/06/15 08:46:43 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', NULL, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(17): CController->render('login')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+---
+2013/06/15 08:46:43 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', NULL, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(17): CController->render('login')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+---
+2013/06/15 08:46:44 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('login', NULL, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(17): CController->render('login')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+---
+2013/06/15 08:49:06 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "site/login".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): CController->renderPartial('site/login', Array, true)
+#1 C:\xampp\htdocs\emlinh\garmentviet\protected\controllers\AdminController.php(19): CController->render('site/login', Array)
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#3 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#8 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/admin
+---
+2013/06/15 08:56:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('logout')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('logout')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/logout')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/logout
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/Upload
+---
+2013/06/15 08:57:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('logout')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('logout')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/logout')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/logout
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductCreate
+---
+2013/06/15 09:05:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in C:\xampp\htdocs\emlinh\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(270): CController->missingAction('logout')
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): CController->run('logout')
+#2 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/logout')
+#3 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\emlinh\garmentviet\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/emlinh/garmentviet/index.php/site/logout
+HTTP_REFERER=http://localhost/emlinh/garmentviet/index.php/admin/ProductCreate
+---

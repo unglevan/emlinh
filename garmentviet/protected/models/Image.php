@@ -13,7 +13,17 @@
  */
 class Image extends CActiveRecord
 {
-	/**
+    public function getImageByProductID($productID)
+    {
+      
+		$condition = array(
+		    'condition' => "ProductID = $productID",
+		);
+		return $this->findAll($condition);
+	
+    }
+
+    /**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
 	 * @return Image the static model class
