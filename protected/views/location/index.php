@@ -1,7 +1,6 @@
 <?php
 /* @var $this LocationController */
 /* @var $form CActiveForm */
-$language = Yii::app()->request->cookies['language']->value;
  $session=new CHttpSession;
   $session->open();
   if(!isset($session['showed']))

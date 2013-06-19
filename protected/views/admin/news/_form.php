@@ -29,20 +29,19 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content_vi'); ?>
-		<?php $this->widget('application.extensions.tinymce.ETinyMce', array( 
+		<?php $this->widget('application.extensions.ckeditor.CKEditor', array( 
                      "model" => $model,
+		    'language' => "en-uk",
                     'attribute'=>'content_vi',
-                    'useSwitch' => false,
                     'editorTemplate'=>'full')); ?>
 		<?php echo $form->error($model,'content_vi'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content_en'); ?>
-		<?php $this->widget('application.extensions.tinymce.ETinyMce', array( 
+		<?php $this->widget('application.extensions.ckeditor.CKEditor', array(  
                     "model" => $model,
                     'attribute'=>'content_en',
-                    'useSwitch' => false,
                     'editorTemplate'=>'full')); ?>
 		<?php echo $form->error($model,'content_en'); ?>
 	</div>
