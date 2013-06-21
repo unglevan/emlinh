@@ -10,7 +10,8 @@ $language =Yii::app()->request->cookies['language']->value;
 	<?php 
         if ($language == Location::LANGUAGE_ENGLISH) echo "<h3>New Collections</h3>";
         else echo "<h3> Bộ Sưu Tập Mới</h3>";
-	foreach($productImages as $pro)
+
+foreach($productImages as $pro)
 	{
 		/*@var $pro Product*/
 	?>

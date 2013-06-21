@@ -92,3 +92,28 @@ Stack trace:
 #19 {main}
 REQUEST_URI=/emlinh/
 ---
+2013/06/22 01:24:42 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\emlinh\protected\views\product\detail.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(869): ProductController->renderFile()
+#1 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(782): ProductController->renderPartial()
+#2 C:\xampp\htdocs\emlinh\protected\controllers\ProductController.php(189): ProductController->render()
+#3 C:\xampp\htdocs\emlinh\protected\controllers\ProductController.php(138): ProductController->render()
+#4 unknown(0): ProductController->actionDetail()
+#5 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\emlinh\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#9 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#12 C:\xampp\htdocs\emlinh\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\emlinh\yii\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#15 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(282): ProductController->run()
+#16 C:\xampp\htdocs\emlinh\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\emlinh\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\emlinh\index.php(13): CWebApplication->run()
+REQUEST_URI=/emlinh/index.php/product/detail?ID=18&color=White
+in C:\xampp\htdocs\emlinh\protected\views\product\detail.php (8)
+in C:\xampp\htdocs\emlinh\protected\controllers\ProductController.php (189)
+in C:\xampp\htdocs\emlinh\protected\controllers\ProductController.php (138)

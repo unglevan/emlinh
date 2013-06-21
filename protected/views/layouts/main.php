@@ -16,7 +16,6 @@
 	<link rel="shortcut icon" href="/images/Product/images/logo2.ico" type="image/x-icon" />
 </head>
 
-    <body background="<?php echo Yii::app()->request->baseUrl; ?>/images/Product/images/Product/bg.jpg">
 
 <div class="container">
     <div id="header"

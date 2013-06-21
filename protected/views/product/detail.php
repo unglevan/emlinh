@@ -34,7 +34,7 @@ $language =Yii::app()->request->cookies['language']->value;
 	<div class="product_name">
 		<p><?php 
                 if ($language == Location::LANGUAGE_ENGLISH)
-                    echo "<h3>".$model->NameEN."</h3>" ;
+                    echo "<div><h3>".$model->NameEN."</h3></div>" ;
                 else {
                     echo "<h3>".$model->NameVN."</h3>";
                 }
@@ -74,7 +74,7 @@ $language =Yii::app()->request->cookies['language']->value;
 	<HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
 	<div>
 		<p><?php 
-                if ($language == Location::LANGUAGE_ENGLISH)echo "<h3>Description</h3><p>".$model->DescriptionEN."</p>";
+                if ($language == Location::LANGUAGE_ENGLISH)echo "<h3>Description</h3><div>".$model->DescriptionEN."</div>";
                 else echo "<h3>Mô tả</h3>".$model->DescriptionVN;?></p>
                 <HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
 	</div>
