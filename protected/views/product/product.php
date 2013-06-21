@@ -11,7 +11,7 @@ $language =Yii::app()->request->cookies['language']->value;
 
 	<div class="center">
 		<a href="<?php echo $this->createUrl('product/detail', array("ID" => $model->id, 'color'=>$model->images[0]->ColorEN))?>">
-		<?php echo CHtml::image(Yii::app()->baseUrl."/".$model->images[0]->File, 'New collections', array('width' => 300, 'height' => 430)); ?>
+		<?php echo CHtml::image(Yii::app()->baseUrl."/".$model->images[0]->File, 'New collections', array('width' => 200, 'height' => 300)); ?>
 		</a>
                 <?php 
                 if ($language == 2)

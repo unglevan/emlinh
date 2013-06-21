@@ -51,10 +51,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=host1.inet.vn;dbname=garmentv_0',
+			'connectionString' => 'mysql:host=localhost;dbname=garmentviet',
 			'emulatePrepare' => true,
-			'username' => 'garmentv_0',
-			'password' => 'garmentviet',
+			'username' => 'root',
+			'password' => 'root',
 			'charset' => 'utf8',
 		),
 		

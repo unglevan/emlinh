@@ -18,18 +18,19 @@ $language =Yii::app()->request->cookies['language']->value;
 	
 </div>
 
-<div class="main">
+<div id="content2">
 	
 	<?php foreach($model->images as $image)
 	{
 		/*@var $image Image*/
 		if($image->ColorEN == $color)
 		{?>
-			 <img  id="ImageContent" src="<?php echo Yii::app()->baseUrl."/".$image->File?>" alt="none" width="100" height="120"></img>
+			 <img  id="ImageContent" src="<?php echo Yii::app()->baseUrl."/".$image->File?>" alt="none" width="300" height="430"></img>
 		<?php }
 	}
-	?>
-    <div class="detail" id="right">
+	?>   
+</div>
+<div class="detail" id="right">
 	<div class="product_name">
 		<p><?php 
                 if ($language == Location::LANGUAGE_ENGLISH)
@@ -73,12 +74,12 @@ $language =Yii::app()->request->cookies['language']->value;
 	<HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
 	<div>
 		<p><?php 
-                if ($language == Location::LANGUAGE_ENGLISH)echo "<h3>Description</h3>".$model->DescriptionEN;
+                if ($language == Location::LANGUAGE_ENGLISH)echo "<h3>Description</h3><p>".$model->DescriptionEN."</p>";
                 else echo "<h3>Mô tả</h3>".$model->DescriptionVN;?></p>
                 <HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
 	</div>
 </div>
-</div>
+
 
  <script type="text/javascript">
              function changeImage(Str) {

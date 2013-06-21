@@ -79,22 +79,9 @@
   
 	<div id="footer">
 	  <HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
-		<?php 
-                    if($language == Location::LANGUAGE_ENGLISH){
-                ?>
-            <b><center>DKB Vietnam Limited Company</center></b><br/>
-            <center><b>Address: </b>Suite 401, TAD Building, 255 Hoang Van Thai Str, Hanoi, Vietnam</center><br />
-            <center><b>Tel/Fax: </b>84-437373061  <b>Hotline: </b>84-120.555.1982</center><br />
-            <center><b>Email: </b></center>
-                    <?php }
- else {
-     
-         ?>
-            <b><center>Công ty TNHH DKB Việt Nam</center></b><br/>
-            <center><b>Địa Chỉ: </b>Phòng 401, Tòa nhà TAD, 255 Hoàng Văn Thái, Hà Nội, Việt Nam</center><br />
-            <center><b>Tel/Fax: </b>84-437373061  <b>Hotline: </b>84-120.555.1982</center><br />
-            <center><b>Email: </b></center>
- <?php }?>
+		
+            <b><center>All rights reserved to DKB Vietnam Co., Ltd</center></b><br/>
+   
 	</div><!-- footer -->
 
 </div><!-- page -->

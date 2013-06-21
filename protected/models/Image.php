@@ -110,7 +110,7 @@ class Image extends CActiveRecord
 	}
         
          public function beforeSave() {
-            $this->File = "/images/Product/images/Product/".$this->File;
+            $this->File = "images/Product/".$this->File;
            
             parent::beforeSave();
             return TRUE;

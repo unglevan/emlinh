@@ -35,13 +35,19 @@ $catalogDDL = CHtml::listData($catalog, 'id', 'subNameVN');
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'DescriptionVN'); ?>
-		<?php echo $form->textArea($model,'DescriptionVN',array('rows'=>6, 'cols'=>50)); ?>
+		<?php $this->widget('application.extensions.ckeditor.CKEditor', array(  
+                    "model" => $model,
+                    'attribute'=>'DescriptionVN',
+                    'editorTemplate'=>'full')); ?>
 		<?php echo $form->error($model,'DescriptionVN'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'DescriptionEN'); ?>
-		<?php echo $form->textArea($model,'DescriptionEN',array('rows'=>6, 'cols'=>50)); ?>
+		<<?php $this->widget('application.extensions.ckeditor.CKEditor', array(  
+                    "model" => $model,
+                    'attribute'=>'DescriptionEN',
+                    'editorTemplate'=>'full')); ?>
 		<?php echo $form->error($model,'DescriptionEN'); ?>
 	</div>
 
