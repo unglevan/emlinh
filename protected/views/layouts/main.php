@@ -26,7 +26,11 @@
                 else echo CHtml::image(Yii::app()->baseUrl."/images/Product/images/logo.png");?>
                 </div>
     </div>
+    <div id="socialmedia" style="top: 208.5px">
+        <a target="_Blank" href="https://www.facebook.com/pages/Garmentviet/352675634860864?fref=ts" class="fb"></a>
+                <a target="_Blank" href="https://twitter.com/garmentviet" class="tw"></a>
 
+</div>
 	<div id="wrapper">
             <div id="menu">
 		<?php 
@@ -79,7 +83,7 @@
 	<div id="footer">
 	  <HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
 		
-            <b><center>All rights reserved to DKB Vietnam Co., Ltd</center></b><br/>
+            <b><center>All rights reserved to DKB Vietnam Co., Ltd</center></b>
    
 	</div><!-- footer -->
 

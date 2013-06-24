@@ -50,7 +50,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'type'); ?>
-		<?php echo CHtml::dropDownList('Product[LocationID]', 1, array("news","campaign"));?>
+		<?php echo CHtml::dropDownList('News[type]', 1, array("news","campaign"));?>
 		<?php echo $form->error($model,'type'); ?>
 	</div>
 

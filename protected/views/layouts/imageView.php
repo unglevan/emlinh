@@ -20,7 +20,7 @@ foreach($productImages as $pro)
 		<?php
 			echo CHtml::image(Yii::app()->baseUrl."/".$pro->images[0]->File, 'New collections', array('width' => 100, 'height' => 120));
 		?>
-		</div>
+                    </a></div>
 	<?php	
 	}
 	?>

@@ -262,7 +262,7 @@
 	width: 300px;
 	padding: 0px 0px 0px 0px;
 	color: #000000;
-    line-height: 10%;
+    /*line-height: 10%;*/
 
 }
 
@@ -272,4 +272,28 @@
 	margin: 0 auto;
 	padding: 0;
 	
+}
+#socialmedia {
+width: 53px;
+height: 70px;
+background: url('socialmedia_left_bg.png') no-repeat;
+position: fixed;
+left: 0;
+padding: 5px 0 0 13px;
+}
+
+#socialmedia .fb {
+display: block;
+background: url('fb_bg.png') no-repeat;
+width: 25px;
+height: 25px;
+margin: 3px 0 0 0;
+}
+
+#socialmedia .tw {
+display: block;
+background: url('tw_bg.png') no-repeat;
+width: 25px;
+margin: 5px 0 0 0;
+height: 25px;
 }
