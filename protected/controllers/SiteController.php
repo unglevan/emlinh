@@ -1,4 +1,5 @@
 <?php
+$language = Yii::app()->request->cookies['language']->value;
 
 class SiteController extends Controller
 {
@@ -57,7 +58,11 @@ class SiteController extends Controller
 
 				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
                                 mail(Yii::app()->params['subEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+				if ($language == Location::LANGUAGE_ENGLISH)
+                                    Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+                                else 
+                                    Yii::app()->user->setFlash('contact','Cám ơn đã liên hệ. Chúng tôi sẽ hồi âm sớm nhất có thể.');
+
 				$this->refresh();
 			}
 		}

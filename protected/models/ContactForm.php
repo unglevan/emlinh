@@ -5,6 +5,7 @@
  * ContactForm is the data structure for keeping
  * contact form data. It is used by the 'contact' action of 'SiteController'.
  */
+$language = Yii::app()->request->cookies['language']->value;
 class ContactForm extends CFormModel
 {
 	public $name;
@@ -12,6 +13,7 @@ class ContactForm extends CFormModel
 	public $subject;
 	public $body;
 	public $verifyCode;
+    
 
 	/**
 	 * Declares the validation rules.
@@ -20,7 +22,7 @@ class ContactForm extends CFormModel
 	{
 		return array(
 			// name, email, subject and body are required
-			array('name, email, subject, body', 'required'),
+			array('name, email, subject, body', 'required'),                        
 			// email has to be a valid email address
 			array('email', 'email'),
 			// verifyCode needs to be entered correctly
@@ -35,8 +37,20 @@ class ContactForm extends CFormModel
 	 */
 	public function attributeLabels()
 	{
+            if ($language == Location::LANGUAGE_ENGLISH)
 		return array(
 			'verifyCode'=>'Verification Code',
+                      
 		);
+            else {
+                return array(
+			'verifyCode'=>'Mã xác nhận',
+                    'name'=> 'Tên',
+                    'subject'=> 'Chủ Đề',
+                    'body'=> 'Nội Dung',
+                    'require'=>'Yêu Cầu',
+                      
+		);
+            }
 	}
 }

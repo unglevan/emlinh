@@ -31,6 +31,8 @@
  * @package system.web.widgets.captcha
  * @since 1.0
  */
+$language = Yii::app()->request->cookies['language']->value;
+
 class CCaptcha extends CWidget
 {
 	/**
@@ -115,7 +117,10 @@ class CCaptcha extends CWidget
 		{
 			// reserve a place in the registered script so that any enclosing button js code appears after the captcha js
 			$cs->registerScript('Yii.CCaptcha#'.$id,'// dummy');
-			$label=$this->buttonLabel===null?Yii::t('yii','Get a new code'):$this->buttonLabel;
+			if ($language == Location::LANGUAGE_ENGLISH)
+                            $label=$this->buttonLabel===null?Yii::t('yii','Get a new code'):$this->buttonLabel;
+                        else
+                            $label=$this->buttonLabel===null?Yii::t('yii','Đổi mã mới'):$this->buttonLabel;
 			$options=$this->buttonOptions;
 			if(isset($options['id']))
 				$buttonID=$options['id'];

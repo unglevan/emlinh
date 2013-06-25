@@ -4,6 +4,8 @@
  const PRODUCT_IN_PAGE = 4; 
  $page = $_GET['page']; 
  $catalogID = $_GET['catalogID'];
+ $language = Yii::app()->request->cookies['language']->value;
+
 ?>
 
 <?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs))?>
