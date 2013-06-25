@@ -4,9 +4,9 @@
 $language = Yii::app()->request->cookies['language']->value;
 
 if ($language == Location::LANGUAGE_ENGLISH){
-    $this->pageTitle=Yii::app()->name . ' - Campaign';
+    $this->pageTitle=Yii::app()->name . ' - Sale';
     $this->breadcrumbs=array(
-	'Campaign',
+	'Sale',
     );
 }
 
@@ -24,21 +24,21 @@ else
      <?php 
         if($language == Location::LANGUAGE_ENGLISH) {
            ?>
-    <h1>Campaign</h1>
+    <h1>Sale</h1>
     <h2><center><?php echo $model[$position]->title_en?></center></h2>
     <h6><?php echo $model[$position]->datepost ?></h6>
     <p><?php echo $model[$position]->content_en ?></p>
       <HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
-      <p><b>Others Campaigns</b></p>
-      <li>
+      <p><b>Others Sales</b></p>
+      <ul>
        <?php 
              for($i = 1; $i<6 && $i < count($model)-$position; $i++) 
              {
                  ?>
-      <a href="<?php echo $this->createUrl('news', array("position" => $i+$position))?>">
-          <?php echo $model[$position + $i]->title_en."(".$model[$position + $i]->datepost.")" ?></a><br />
+          <li> <a href="<?php echo $this->createUrl('news', array("position" => $i+$position))?>">
+          <?php echo $model[$position + $i]->title_en."(".$model[$position + $i]->datepost.")" ?></a></li><br />
            <?php }
-              echo '</li>';
+              echo '</ul>';
         } 
        else {?>
        <h1>Khuyến Mại</h1>; 
@@ -47,15 +47,15 @@ else
          <p><?php echo $model[0]->content_vi ?></p>
         <HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
       <p><b>Các tin khuyến mại cũ hơn</b></p>
-      <li>
+      <ul>
        <?php 
              for($i = 1; $i<6 && $i < count($model)-$position; $i++) 
              {
                  ?>
-      <a href="<?php echo $this->createUrl('news', array("position" => $i+$position))?>">
-          <?php echo $model[$position + $i]->title_vi."(".$model[$position + $i]->datepost.")" ?></a><br />
+      <li><a href="<?php echo $this->createUrl('news', array("position" => $i+$position))?>">
+          <?php echo $model[$position + $i]->title_vi."(".$model[$position + $i]->datepost.")" ?></a></li>
        <?php }
-       echo '</li>';
+ echo '</ul>';
        }
     ?>
 </div>

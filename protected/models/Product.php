@@ -34,6 +34,7 @@ class Product extends CActiveRecord
 	{
 		$condition = array(
 		    'condition' => "CatalogID = $catalogID AND locationID = $location",
+                    'order' => "Date",
 		);
 		return $this->findAll($condition);
 	}

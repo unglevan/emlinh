@@ -85,5 +85,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'linh.nguyen.1992@gmail.com',
+                'subEmail'=>'fire271092@gmail.com'
 	),
 );

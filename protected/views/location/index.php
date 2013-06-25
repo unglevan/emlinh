@@ -45,6 +45,34 @@
                 color: #000000;
                 border: none;                
             }
+            #subSlogan
+
+{
+                
+	position:absolute;
+                
+	left:170px;
+                
+	top:185px;
+                
+	height: 10px;
+                
+	padding: 0px 10px 0px 10px;
+                
+	text-decoration: none;
+                
+	text-align: center;
+                
+	font-family: "Time new Roman";
+                
+	font-size: 40px;
+                
+	color: #000000;
+                
+	border: none;			
+			
+}
+
             #p1
             {
                 position:absolute;
@@ -72,6 +100,11 @@
         <div id="Slogan">
             The finest hands of Vietnam
         </div>
+        <div id="subSlogan">
+			
+	Congratulations, You've Found Us
+		
+</div>
         <div id="p1">
             <?php $form=$this->beginWidget('CActiveForm', array(
                     'id'=>'location-form',

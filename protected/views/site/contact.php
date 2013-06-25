@@ -23,7 +23,6 @@ else
 ?>
 <?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs))?>
 <div id="content2"
-<h1>Contact Us</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -34,6 +33,7 @@ else
 <?php else: 
     if ($language == Location::LANGUAGE_ENGLISH) {
         echo $contact->contact_en;
+
         echo "<p>
     If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
     </p>";

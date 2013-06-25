@@ -17,8 +17,8 @@ class News extends CActiveRecord
    public function getLastestNews()
 	{
 		$condition = array(
-                    'condition' =>"type = 1",
-		    'order' => "datepost",
+                    'condition' =>"type = 0",
+		    'order' => "datepost DESC",
 		);
 		return $this->findAll($condition);
 	}
@@ -26,8 +26,8 @@ class News extends CActiveRecord
         public function getLastestCampaigns()
 	{
 		$condition = array(
-                    'condition' =>"type = 2",
-		    'order' => "datepost",
+                    'condition' =>"type = 1",
+		    'order' => "datepost DESC",
 		);
 		return $this->findAll($condition);
 	}
@@ -119,7 +119,7 @@ class News extends CActiveRecord
 	}
         
         public function beforeSave() {
-            $this->datepost = date("Y/m/d");
+            $this->datepost = date("Y/m/d h:m:s");
             parent::beforeSave();
             return true;
         }

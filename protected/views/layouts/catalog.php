@@ -27,9 +27,9 @@ $language =Yii::app()->request->cookies['language']->value;
                     foreach($catalogs as $catalog)
                     {
                             if($name == $catalog->nameEN)
-                                    echo CHtml::link($catalog->subNameEN, $this->createUrl('product/index', array('catalogID' => $catalog->id)))."<br />";
+                                    echo CHtml::link($catalog->subNameEN, $this->createUrl('product/index', array('catalogID' => $catalog->id,'page'=>1)))."<br />";
                     }
-                    echo "<HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>";
+                  
             }
             echo'<br><br>';
             echo "<HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>";
@@ -68,7 +68,7 @@ $language =Yii::app()->request->cookies['language']->value;
                     echo '</td>';
                 echo '</tr>';               
             echo '</table>';
-            echo "<HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>";
+          
             echo'Hotline: 0120.555.1982';
 // echo '<iframe src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/Garmentviet/352675634860864?fref=ts&amp;width=450&amp;action=like&amp;font=tahoma&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:160px; height:px"></iframe>';
         }
@@ -87,7 +87,7 @@ $language =Yii::app()->request->cookies['language']->value;
                             if($name == $catalog->nameVN)
                                     echo CHtml::link($catalog->subNameVN, $this->createUrl('product/index', array('catalogID' => $catalog->id)))."<br />";
                     }
-                    echo "<HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>";
+                    
             }
             echo '<div>Hỗ trợ trực tuyến<br><br></div>';
             echo '<table width="100%">';
@@ -124,8 +124,9 @@ $language =Yii::app()->request->cookies['language']->value;
                     echo '</td>';
                 echo '</tr>';               
             echo '</table>';
-            echo "<HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>";
+           
            echo'Hotline: 0120.555.1982';
+           
 // echo '<iframe src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/Garmentviet/352675634860864?fref=ts&amp;width=450&amp;action=like&amp;font=tahoma&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:160px; height:px"></iframe>';       
         }
 	?>
