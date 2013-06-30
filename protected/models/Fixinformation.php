@@ -43,7 +43,7 @@ class Fixinformation extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id, home, about, shopping, contact, home_en, about_en, shopping_en, contact_en', 'required'),
-			array('id, contact', 'numerical', 'integerOnly'=>true),
+			array('id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, home, about, shopping, contact, home_en, about_en, shopping_en, contact_en', 'safe', 'on'=>'search'),

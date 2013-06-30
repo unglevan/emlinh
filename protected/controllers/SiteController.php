@@ -82,7 +82,24 @@ class SiteController extends Controller
 		));
         }
         
-        public function actionCampaign($position = 0)
+         public function actionNewsAll($page = 1)
+        {
+            $news = News::model()->getLastestNews();
+		$this->render("/site/pages/newsAll", array(
+		    'model'	=> $news,
+                    'page' => $page,
+		));
+        }
+        public function actionSaleAll()
+        {
+            $news = News::model()->getLastestCampaigns();
+		$this->render("/site/pages/saleAll", array(
+		    'model'	=> $news,
+		));
+        }
+        
+
+                public function actionCampaign($position = 0)
         {
             $campaign = News::model()->getLastestCampaigns();
 		$this->render("/site/pages/campaign", array(

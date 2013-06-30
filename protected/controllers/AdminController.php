@@ -17,17 +17,16 @@ class AdminController extends Controller
     public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
 			
 		
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','create','update'),
+				'actions'=>array('productAdmin','productDelete','productCreate','productUpdate',
+                                   'newsAdmin','newsDelete','newsCreate','newsUpdate' ),
 				'users'=>array('admin'),
 			),
+                    
 			array('deny',  // deny all users
+                                
 				'users'=>array('*'),
 			),
 		);
@@ -36,7 +35,11 @@ class AdminController extends Controller
     
      public function actionIndex()
  {
-       $this->redirect(array('login'));
+        if(Yii::app()->user->IsGuest)
+            $this->redirect(array('login'));
+        else {
+        $this->redirect(array('ProductCreate'));
+        }
   }
 	public function actionProductCreate()
 	{

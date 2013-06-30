@@ -34,6 +34,7 @@
 				array('label'=>'Product', 'url'=>array('/admin/ProductIndex')),
 				array('label'=>'Image', 'url'=>array('/image/index')),
                                 array('label'=>'Upload', 'url'=>array('/admin/Upload')),
+                                 array('label'=>'Admin', 'url'=>array('/adminManager/Update', 'id'=> 1)),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/admin/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>

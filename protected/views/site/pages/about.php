@@ -34,5 +34,12 @@ else
         }
     ?>
 </div>
-
+<script> 
+    $("#content2").jReadMore({
+    open: 'Read Less',
+    close: 'Read More',
+    height: 194, 
+    diff: 40 //if the height of the opened section is smaller than 40, don't apply plugin
+});
+</script>
 <?php $this->renderPartial('/layouts/imageView', array('productImages' => $productImages))?>

@@ -8,8 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reveal.css" />
+        	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/jreadmore.css" />
+
 	<?php Yii::app()->clientScript->registerScriptFile( Yii::app()->baseUrl.'/js/jquery.reveal.js');?>
 	<?php Yii::app()->clientScript->registerScriptFile( Yii::app()->baseUrl.'/js/jquery.expander.js');?>
+                <?php Yii::app()->clientScript->registerScriptFile( Yii::app()->baseUrl.'/js/jquery.jreadmore.0.1.js');?>
 	<?php Yii::app()->getClientScript()->registerCoreScript('jquery'); ?>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<link rel="icon" href="/images/Product/images/logo2.ico" type="image/x-icon" />
@@ -41,8 +44,8 @@
                             'items'=>array(
                                     array('label'=>'Home', 'url'=>array('/site/index')),
                                     array('label'=>'About Us', 'url'=>array('/site/about', )),
-                                    array('label'=>'News', 'url'=>array('/site/news',)),
-                                    array('label'=>'Campaign', 'url'=>array('/site/campaign',)),
+                                    array('label'=>'News', 'url'=>array('/site/newsAll','page'=>1)),
+                                    array('label'=>'Campaign', 'url'=>array('/site/saleAll','page'=>1)),
                                     array('label'=>'Shopping Guide', 'url'=>array('/site/shoppingguide',)),
                                      array('label'=>'Contact', 'url'=>array('/site/contact')),
                             ),
@@ -55,8 +58,8 @@
                             'items'=>array(
                                     array('label'=>'Trang Chủ', 'url'=>array('/site/index')),
                                     array('label'=>'Giới Thiệu', 'url'=>array('/site/about')),
-                                    array('label'=>'Tin Tức', 'url'=>array('/site/news')),
-                                    array('label'=>'Khuyến Mãi', 'url'=>array('/site/campaign')),
+                                    array('label'=>'Tin Tức', 'url'=>array('/site/newsAll','page'=>1)),
+                                    array('label'=>'Khuyến Mãi', 'url'=>array('/site/saleAll','page'=>1)),
                                     array('label'=>'Hướng Dẫn Mua Hàng', 'url'=>array('/site/shoppingguide')),
                                      array('label'=>'Liên Hệ', 'url'=>array('/site/contact')),
                             ),

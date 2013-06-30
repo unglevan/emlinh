@@ -297,3 +297,12 @@ width: 25px;
 margin: 5px 0 0 0;
 height: 25px;
 }
+
+#newscontent .image {
+    
+   border: solid 1px #cbcbcb;
+float: left;
+text-align: center;
+margin: 0 10px 10px 0;
+padding: 3px;
+}
