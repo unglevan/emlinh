@@ -12,7 +12,7 @@ class LocationController extends Controller
 			$dataDDL = CHtml::listData($cities, 'id', 'nameVN');
 
 		$this->render('index', array(
-			'cities'	=> $cities,
+			//'cities'	=> $cities,
 			'dataDDL'	=> $dataDDL,
 		));	
 
@@ -29,5 +29,12 @@ class LocationController extends Controller
             Yii::app()->request->cookies['language'] = new CHttpCookie('language', $language);
             Yii::app()->request->cookies['location'] = new CHttpCookie('location', $location);
 		$this->redirect($this->createUrl('site/index'));
+            //var_dump($_POST['language']);
 	}
+        
+        public function actionClickSubmit()
+        {
+            $this->refresh();
+        }
+  
 }

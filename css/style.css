@@ -111,11 +111,16 @@
 
 #content2 {
 	float: left;
-	width: 450px;
-	padding: 0px 30px 0px 60px;
+	width: 560px;
+	padding: 0px 30px 0px 30px;
    margin-left: 10px;
    margin-right: 10px;
     text-align: justify;
+  
+}
+
+#content2 p {
+      color: #878787;
 }
 
 .center{

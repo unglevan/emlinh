@@ -27,9 +27,12 @@
 	</div><!-- header -->
 
 	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
+		<?php 
+                if(!Yii::app()->user->isGuest) {
+                $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Info', 'url'=>array('/admin/InformationUpdate')),
+                            array('label'=>'Catalog', 'url'=>array('/catalog/index')),
 				array('label'=>'News', 'url'=>array('/admin/NewsIndex')),
 				array('label'=>'Product', 'url'=>array('/admin/ProductIndex')),
 				array('label'=>'Image', 'url'=>array('/image/index')),
@@ -37,7 +40,8 @@
                                  array('label'=>'Admin', 'url'=>array('/adminManager/Update', 'id'=> 1)),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/admin/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
-		)); ?>
+		));
+                }?>
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(

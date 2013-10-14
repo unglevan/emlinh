@@ -45,7 +45,7 @@ else
        <h1>Tin Tức</h1>; 
          <h2><center><?php echo $model[0]->title_vi?></center></h2>
     <h6><?php echo $model[$position]->datepost ?></h6>
-         <p><?php echo $model[0]->content_vi ?></p>
+    <p><div id = "context"><?php echo $model[0]->content_vi ?></div></p>
         <HR width ='100%' size ='0.5' color ='#ccc' NOSHADE>
       <p><b>Các tin cũ hơn</b></p>
       <li>

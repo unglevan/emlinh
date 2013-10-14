@@ -39,11 +39,7 @@
         
         <div class="row">
 		<?php echo $form->labelEx($model,'image_vi'); ?>
-		<?php $this->widget('application.extensions.ckeditor.CKEditor', array( 
-                     "model" => $model,
-		    'language' => "en-uk",
-                    'attribute'=>'image_vi',
-                    'editorTemplate'=>'full')); ?>
+		<?php echo $form->textField($model,'image'); ?>
 		<?php echo $form->error($model,'image_vi'); ?>
 	</div>
 
@@ -78,7 +74,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'type'); ?>
-		<?php echo CHtml::dropDownList('News[type]', 1, array("news","campaign"));?>
+		<?php echo CHtml::dropDownList('News[type]', $model->new->type, array("news","campaign"));?>
 		<?php echo $form->error($model,'type'); ?>
 	</div>
 

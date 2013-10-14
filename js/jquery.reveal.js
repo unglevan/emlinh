@@ -77,11 +77,20 @@
 					}
 					if(options.animation == "fade") {
 						modal.css({'opacity' : 0, 'visibility' : 'visible', 'top': $(document).scrollTop()+topMeasure});
-						modalBG.fadeIn(options.animationspeed/2);
+						//modalBG.fadeIn(options.animationspeed/2, function(){
+                                               //     $(this).animate({'top': '+=300px'},'slow')
+                                               // });
+                                               modalBG.fadeIn(options.animationspeed/2);
+                                               //modalBG.animate({'top': '+= 300px'}, 2000);
 						modal.delay(options.animationspeed/2).animate({
 							"opacity" : 1
 						}, options.animationspeed,unlockModal());					
 					} 
+                                       /* if(options.animation == "fade") {
+                                            modelBG.animate({
+                                                top: '+=100px',
+                                            },3000);
+                                        }*/
 					if(options.animation == "none") {
 						modal.css({'visibility' : 'visible', 'top':$(document).scrollTop()+topMeasure});
 						modalBG.css({"display":"block"});	

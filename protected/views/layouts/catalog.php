@@ -1,10 +1,11 @@
 <?php
 /*@var $this Controller*/
 /*@var $catalog Catalog*/
-$nameEN = array(
-    'T-shirts', "Kids Fashion", "Hand Stitched Leather"
-);
-
+ $nameEN=Catalog::model()->findAll(array(
+    'select'=>'nameEN',
+    'group'=>'nameEN',
+    'distinct'=>true,
+));
 $nameVN = array (
     'Áo Phông', 'Thời Trang Trẻ Em', 'Da Khâu Bằng Tay'
 );
@@ -20,13 +21,13 @@ $language =Yii::app()->request->cookies['language']->value;
             {
             ?>
             <div>
-                    <?php echo $name?>
+                    <?php echo $name->nameEN?>
             </div>
 
             <?php
                     foreach($catalogs as $catalog)
                     {
-                            if($name == $catalog->nameEN)
+                            if($name->nameEN == $catalog->nameEN)
                                     echo CHtml::link($catalog->subNameEN, $this->createUrl('product/index', array('catalogID' => $catalog->id,'page'=>1)))."<br />";
                     }
                   

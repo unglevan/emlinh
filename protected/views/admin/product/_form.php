@@ -9,8 +9,12 @@
 $cities = Location::model()->getAll();
 $dataDDL = CHtml::listData($cities,'id', 'nameEN');
 
-$catalog = Catalog::model()->findAll();
-$catalogDDL = CHtml::listData($catalog, 'id', 'subNameVN');
+$catalog = Catalog::model()->findAll(array(
+    'select'=>'nameEN',
+    'group'=>'nameEN',
+    'distinct'=>true,
+));
+$catalogDDL = CHtml::listData($catalog, 'nameEN', 'nameEN');
 ?>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'product-form',
@@ -65,14 +69,40 @@ $catalogDDL = CHtml::listData($catalog, 'id', 'subNameVN');
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CatalogID'); ?>
-		 <?php echo CHtml::dropDownList('Product[CatalogID]', 1, $catalogDDL);?>
+		 <?php // echo CHtml::dropDownList('Product[CatalogID]', 1, $catalogDDL);
+                  $this->widget('ext.combobox.EJuiComboBox', array(
+    'model' => $model,
+    'attribute' => 'CatalogID',
+    // data to populate the select. Must be an array.
+    'data' => $catalogDDL,
+    // options passed to plugin
+    'options' => array(
+
+        'allowText' => true,
+    ),
+    // Options passed to the text input
+    'htmlOptions' => array('size' => 10),
+));?>
 		<?php echo $form->error($model,'CatalogID'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'LocationID'); ?>
 		<?php //echo CHtml::dropDownList($model,1,$dataDDL); ?>
-            <?php echo CHtml::dropDownList('Product[LocationID]', 1, $dataDDL);?>
+            <?php //echo CHtml::dropDownList('Product[LocationID]', $model->LocationID, $dataDDL);
+            $this->widget('ext.combobox.EJuiComboBox', array(
+    'model' => $model,
+    'attribute' => 'LocationID',
+    // data to populate the select. Must be an array.
+    'data' => $dataDDL,
+    // options passed to plugin
+    'options' => array(
+
+        'allowText' => true,
+    ),
+    // Options passed to the text input
+    'htmlOptions' => array('size' => 10),
+));?>
 		<?php echo $form->error($model,'LocationID'); ?>
 	</div>
         

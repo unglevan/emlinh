@@ -16,8 +16,9 @@ $language = Yii::app()->request->cookies['language']->value;
  }
 
  $session->close();
+ 
 ?>
-<?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs))?>
+<?php $this->renderPartial('/layouts/catalog', array('catalogs' => $catalogs, 'nameEN'=>$name))?>
 
 <div class="home" id="content2">
     <?php 
@@ -33,11 +34,21 @@ $language = Yii::app()->request->cookies['language']->value;
 </div>
 
 <script> 
+    <?php        if ($language == Location::LANGUAGE_ENGLISH) {?>
     $("#content2").jReadMore({
     open: 'Read Less',
     close: 'Read More',
-    height: 600, 
+    height: 580, 
     diff: 200 //if the height of the opened section is smaller than 40, don't apply plugin
 });
+    <?php }
+    else { ?>
+    $("#content2").jReadMore({
+    open: 'Thu nhỏ',
+    close: 'Đọc tiếp',
+    height: 580, 
+    diff: 200 //if the height of the opened section is smaller than 40, don't apply plugin
+    });
+    <?php }?>
 </script>
 <?php $this->renderPartial('/layouts/imageView', array('productImages' => $productImages))?>

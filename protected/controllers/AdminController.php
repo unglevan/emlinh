@@ -19,12 +19,12 @@ class AdminController extends Controller
 		return array(
 			
 		
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+	/*		array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('productAdmin','productDelete','productCreate','productUpdate',
                                    'newsAdmin','newsDelete','newsCreate','newsUpdate' ),
 				'users'=>array('admin'),
 			),
-                    
+          */          
 			array('deny',  // deny all users
                                 
 				'users'=>array('*'),
@@ -319,6 +319,7 @@ class AdminController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+        
         
 	public function actionUpload()
 	{

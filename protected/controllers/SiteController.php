@@ -49,15 +49,37 @@ class SiteController extends Controller
 			$model->attributes=$_POST['ContactForm'];
 			if($model->validate())
 			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
+			Yii::import('application.extensions.phpmailer.JPhpMailer'); 
+      $mail = new JPhpMailer; $mail->IsSMTP(); 
+      $mail->SetLanguage('en', 'includes/phpmailer/language/phpmailer.lang-en.php', $PHPMAILER_LANG['tls']='tls');
+     $mail->SMTPSecure = "SSL";  
+      $mail->Host = 'smtp.gmail.com'; 
+      $mail->SMTPAuth = FALSE; 
+     // $mail->SMTPSecure = true; 
+      $mail->Username = 'fire271092@gmail.com'; 
+      $mail->Port = '465'; 
+      $mail->Password = 'ljnhxjnh'; 
+      $mail->SMTPKeepAlive = true;  
+      $mail->Mailer = "smtp"; 
+      $mail->IsSMTP(); // telling the class to use SMTP  
+      $mail->SMTPAuth   = true;  
+      $mail->CharSet = 'utf-8';  
+      $mail->SMTPDebug  = 0;
+      $mail->SetFrom('fire271092@gmail.com', 'kyungkun'); 
+      $mail->Subject = 'PHPMailer Test Subject via GMail, basic with authentication'; 
+      $mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; 
+      $mail->MsgHTML('<h1>JUST A TEST!</h1>'); 
+      $mail->AddAddress('linh.nguyen.1992@gmail.com', 'Thuy Linh'); $mail->Send();
+      
+			 
+				/*$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
 				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
 				$headers="From: $name <{$model->email}>\r\n".
 					"Reply-To: {$model->email}\r\n".
 					"MIME-Version: 1.0\r\n".
-					"Content-type: text/plain; charset=UTF-8";
+					"Content-type: text/plain; charset=UTF-8";*/
 
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-                                mail(Yii::app()->params['subEmail'],$subject,$model->body,$headers);
+
 				if ($language == Location::LANGUAGE_ENGLISH)
                                     Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
                                 else 
@@ -68,7 +90,6 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model, 'contact'=>$contact[0]));
 	}
-
 	/**
 	 * Displays the login page
 	 */
@@ -82,12 +103,12 @@ class SiteController extends Controller
 		));
         }
         
-         public function actionNewsAll($page = 1)
+         public function actionNewsAll()
         {
             $news = News::model()->getLastestNews();
 		$this->render("/site/pages/newsAll", array(
 		    'model'	=> $news,
-                    'page' => $page,
+
 		));
         }
         public function actionSaleAll()
@@ -145,6 +166,7 @@ class SiteController extends Controller
 	{
                 $location =  Yii::app()->request->cookies['location']->value;
 		$data["catalogs"] = Catalog::model()->getAll();
+               
 		$data['productImages'] = Product::model()->getLastestProductImage($location); 
 		parent::render($view, $data, $return);
 	}

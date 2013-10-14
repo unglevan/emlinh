@@ -185,6 +185,11 @@ class ProductController extends Controller
 	{
                 $location =  Yii::app()->request->cookies['location']->value;
 		$data["catalogs"] = Catalog::model()->getAll();
+                 $data["name"] = Catalog::model()->findAll(array(
+    'select'=>'nameEN',
+    'group'=>'nameEN',
+    'distinct'=>true,
+));
 		$data['productImages'] = Product::model()->getLastestProductImage($location); 
 		parent::render($view, $data, $return);
 	}
